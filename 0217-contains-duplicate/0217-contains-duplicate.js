@@ -11,14 +11,14 @@ var containsDuplicate = function (nums) {
     if (cache[nums[i]] === undefined) {
       cache[nums[i]] = 1
     } else {
-      cache[nums[i]]++
+      return true;
     }
   }
 
   //iterate through cache
-  for (let key in cache) {
-    if (cache[key] > 1) return true;
-  }
+  // for (let key in cache) {
+  //   if (cache[key] > 1) return true;
+  // }
 
   return false;
 };
