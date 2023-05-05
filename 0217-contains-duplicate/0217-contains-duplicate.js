@@ -15,10 +15,6 @@ var containsDuplicate = function (nums) {
     }
   }
 
-  //iterate through cache
-  // for (let key in cache) {
-  //   if (cache[key] > 1) return true;
-  // }
 
   return false;
 };
