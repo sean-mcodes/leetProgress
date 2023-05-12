@@ -23,13 +23,12 @@ var matrixReshape = function (mat, r, c) {
   }
   // console.log(array)
   //iterate in reverse starting at the end of new matrix
+  //fill new matrix by popping values from array
   for (let i = r - 1; i >= 0; i--) {
     for (let j = c - 1; j >= 0; j--) {
       matrix[i][j] = array.pop();
     }
   }
-  //fill new matrix by popping values from array
-
   //return the new matrix
   return matrix;
 };
